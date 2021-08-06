@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+<link rel="stylesheet" href="translator.css">
+    
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://unpg.com/axios/dist/axios.min.js"></script>
+
+    <title>Translator</title>
+</head>
+<body>
+    <section id="contact">
+        <div class="section-content">
+            <h1 class="section-header"> <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Traduzca </span> Su Texto</h1>
+            <h3>Write And Click <b>TRANSLATE</b></h3>
+        </div>
+        <div class="contact-section">
+        <div class="container">
+            <form>	
+                <div class="col-md-6 form-line">
+                    <div class="form-group"> 
+                    <label for ="from"> From </label>
+                          
+                    <select name="from" id="selectIdioma">
+<option value="es">español</option>
+<option value="en">ingles</option>
+<option value="fr">frances</option>
+<option value="de">aleman</option>
+</select> </div>
+                      <div class="form-group">
+                          
+                           <textarea  class="form-control" id="original" placeholder="Ingrese Su Texto"></textarea>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                       <div class="form-group"> 
+                    <label for ="from"> From</label>
+                          
+                    <select name="from" id="lenguaje">
+<option value="es">español</option>
+<option value="en">ingles</option>
+<option value="fr">frances</option>
+<option value="de">aleman</option>
+</select> </div>
+                      <div class="form-group">
+                      
+                           <textarea  class="form-control" id="translated" placeholder="Texto Traducido"></textarea>
+                      </div>
+                      <div>
+
+                          <button type="button" class="btn btn-default submit" onclick="probarApi()" id="traducir"><i class="fa fa-globe" aria-hidden="true"></i> TRADUCIR </button>
+                      </div>
+                      
+                </div>
+            </form>
+            </div></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="Translator.js"></script>
+</body>
+</html>

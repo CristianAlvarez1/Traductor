@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\LenguajeC"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TrabajoFinalTraslate"
+	}
+}
